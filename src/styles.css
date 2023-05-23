@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+
+.btn-green{
+    background-color: #29664B;
+    color: #fff;
+}
+.btn-outline-green{
+    border: 1px solid #29664B;
+}
+
+.lemon{
+    font-family: 'Lemon', cursive;
+}

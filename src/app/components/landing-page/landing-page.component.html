@@ -1,1 +1,38 @@
-<p>landing-page works!</p>
+<div class="landing image">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+        <div class="container">
+          <a class="navbar-brand lemon fs-3" routerLink="">Ever<span style="color: #29664B;">Green</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <div class="flex">
+                    <button class="btn btn-outline" (click)="navigateToLogin()">Login</button>
+                    <button class="btn-outline-green button btn-green py-2 px-3" (click)="navigateToSignUp()">Start For Free</button>
+                </div>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      <div class="container flex justify-content-center align-items-center h-75 gap-4 mt-4">
+        <div class="row flex justify-content-center align-items-center">
+            <div class="col flex flex-column gap-3">
+                <h2 class="lemon">
+                    Explore. Discover. Immerse. Your gateway to a world of books.
+                </h2>
+                <div class="">
+                    Start your reading adventure today. Join us at <strong>Ever<span style="color: #29664B;">Green</span></strong> Liabrary and experience the joy of reading in a whole new way.
+                </div>
+                <div class="buttons">
+                    <button class="button btn-green" (click)="navigateToSignUp()">Get Started</button>
+                </div>
+            </div>
+            <div class="col flex justify-content-center align-items-center">
+                <img src="../../../assets/images/landingsvg.svg" alt="" height="400" width="600">
+            </div>
+            
+        </div>
+      </div>
+</div>

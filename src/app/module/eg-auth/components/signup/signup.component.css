@@ -1,14 +1,17 @@
-.bg{
-    height: 100vh;
+.signUp-wrapper{
+    height: 75vh;
+
 }
+.button{
+    border: none;
 
-
+}
 .anchor{
-    text-decoration: underline;
+    text-decoration: none;
     color: #29664B;
     cursor: pointer;
     font-weight: bold;
-    opacity: 0.6;
+    opacity: 0.5;
     transition: all ease-in 0.2s;
     
 }
