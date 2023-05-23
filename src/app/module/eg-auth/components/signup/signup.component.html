@@ -1,0 +1,12 @@
+<div class="signUp-wrapper flex justify-content-center align-items-center flex-column">
+    <h2 class="text-center mb-2">Create <span style="color: #29664B;">Account</span></h2>
+    <form class="flex flex-column gap-2 w-50">
+        <input type="text" class="form-control" id="name" placeholder="username">
+        <input type="email" class="form-control" id="email" placeholder="email@example.com">
+        <input type="text" class="form-control" id="address" placeholder="address">
+        <input type="password" class="form-control" id="password" placeholder="password">
+        <input type="password" class="form-control" id="conPassword" placeholder="confirm password">
+        <button class="btn-green rounded py-2 button">Register</button>
+    </form>
+    <div class="text-center mt-3">Already have an account? <a class="anchor" (click)="navigateToLogin()">Login</a></div>
+</div>
