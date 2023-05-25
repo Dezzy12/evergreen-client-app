@@ -1,1 +1,31 @@
-<p>eg-user works!</p>
+<div class="main-container ">
+  <nav class="navbar bg-body-tertiary">
+    <div class="container justify-content-start gap-1 ">
+      <a class="navbar-brand lemon fs-3" routerLink="">Ever<span style="color: #29664B;">Green</span></a>
+      <form class="d-flex ms-4 search" role="search">
+        
+        <span class="p-input-icon-left">
+          <i class="pi pi-search"></i>
+          <input class="form-control me-2" style="width: 25rem;" type="search" placeholder="Search Book "
+          aria-label="Search" pInputText />
+        </span>
+        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+      </form>
+    </div>
+  </nav>
+  <div class="content " >
+    <div class="sidebar">
+      <div class="text-center pt-2">Shelf</div>
+      <div class="flex justify-content-center"><hr style="width: 90%;"></div>
+      <div class="sidebar-items">
+        <a routerLink="discover" routerLinkActive="selected" class="sidebar-item" ><i class="pi pi-gift ico"></i>Discover</a>
+        <a routerLink="saved" routerLinkActive="selected" class="sidebar-item"><i class="pi pi-save ico"></i>Saved</a>
+        <a routerLink="reading" routerLinkActive="selected" class="sidebar-item"><i class="pi pi-book ico"></i>Reading</a>
+        <a routerLink="history" routerLinkActive="selected" class="sidebar-item"><i class="pi pi-history ico"></i>History</a>
+      </div>
+    </div>
+    <div class="main ms-3">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
