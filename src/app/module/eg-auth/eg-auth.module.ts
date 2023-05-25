@@ -6,12 +6,12 @@ import { EgAuthComponent } from './eg-auth.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
 
-
 @NgModule({
   declarations: [
     EgAuthComponent,
     SigninComponent,
-    SignupComponent
+    SignupComponent,
+
   ],
   imports: [
     CommonModule,
