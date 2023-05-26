@@ -8,6 +8,7 @@ import { SavedComponent } from './components/saved/saved.component';
 import { DiscoverComponent } from './components/discover/discover.component';
 import { ReadingComponent } from './components/reading/reading.component';
 import { HistoryComponent } from './components/history/history.component';
+import { BookPreviewComponent } from './components/book-preview/book-preview.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HistoryComponent } from './components/history/history.component';
     SavedComponent,
     DiscoverComponent,
     ReadingComponent,
-    HistoryComponent
+    HistoryComponent,
+    BookPreviewComponent
   ],
   imports: [
     CommonModule,

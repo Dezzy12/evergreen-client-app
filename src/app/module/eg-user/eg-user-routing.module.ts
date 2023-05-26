@@ -5,6 +5,7 @@ import { SavedComponent } from './components/saved/saved.component';
 import { HistoryComponent } from './components/history/history.component';
 import { DiscoverComponent } from './components/discover/discover.component';
 import { ReadingComponent } from './components/reading/reading.component';
+import { BookPreviewComponent } from './components/book-preview/book-preview.component';
 
 const routes: Routes = [{
   path: '', component: EgUserComponent,
@@ -12,6 +13,7 @@ const routes: Routes = [{
     {path: 'saved', component: SavedComponent},
     {path: 'history', component: HistoryComponent},
     {path: 'discover', component: DiscoverComponent},
+    {path: 'discover/:id', component: BookPreviewComponent},
     {path: 'reading', component: ReadingComponent},
   ]
  }];
