@@ -5,6 +5,7 @@ import { EgAuthRoutingModule } from './eg-auth-routing.module';
 import { EgAuthComponent } from './eg-auth.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,9 @@ import { SignupComponent } from './components/signup/signup.component';
   ],
   imports: [
     CommonModule,
-    EgAuthRoutingModule
+    EgAuthRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class EgAuthModule { }
