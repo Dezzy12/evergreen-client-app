@@ -16,6 +16,8 @@
     gap: 2;
 }
 .sidebar{
+    display: flex;
+    flex-direction: column;
     width: 20%;
     height: 100%;
     background-color: #fff;
@@ -44,4 +46,10 @@
 }
 .main{
     width: 80%;
+    
+}
+
+.logout{
+    margin-top: auto;
+    padding: 10px;
 }

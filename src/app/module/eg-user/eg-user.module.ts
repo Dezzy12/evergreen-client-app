@@ -9,6 +9,8 @@ import { DiscoverComponent } from './components/discover/discover.component';
 import { ReadingComponent } from './components/reading/reading.component';
 import { HistoryComponent } from './components/history/history.component';
 import { BookPreviewComponent } from './components/book-preview/book-preview.component';
+import { ReadComponent } from './components/read/read.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 
 @NgModule({
@@ -18,12 +20,15 @@ import { BookPreviewComponent } from './components/book-preview/book-preview.com
     DiscoverComponent,
     ReadingComponent,
     HistoryComponent,
-    BookPreviewComponent
+    BookPreviewComponent,
+    ReadComponent
   ],
   imports: [
     CommonModule,
     EgUserRoutingModule,
-    EgSharedModule
+    EgSharedModule,
+    PdfViewerModule,
+
   ]
 })
 export class EgUserModule { }
