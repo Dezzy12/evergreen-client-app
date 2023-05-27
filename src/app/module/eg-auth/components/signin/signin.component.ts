@@ -13,11 +13,13 @@ import { LocalStorageUtils } from 'src/app/utils/local-storage.utils';
 export class SigninComponent implements OnInit {
 
   formGourp! : FormGroup
+  message! : string
 
   constructor(
     private router:Router,
     private fb: FormBuilder, //Creates a new Form, FormGroup or Array
     private authService:AuthService,
+
     ) { }
 
   ngOnInit(): void {
@@ -42,11 +44,11 @@ export class SigninComponent implements OnInit {
     this.authService.login(formData).subscribe({
       next: response => { // Activities after user login
         LocalStorageUtils.writeToken(response.token)
-        alert("Succesful login")
+        this.router.navigate(['/user/discover']);
       },
       error: err => {
         console.log(err);
-        alert("Failed to login")
+        this.message = "Error logging in: " + err
        }
 
     }) 
