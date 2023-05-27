@@ -1,0 +1,30 @@
+.books-container{
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.book{
+    display: flex;
+    /* flex-direction: column; */
+    width: 120px;
+    
+}
+
+.button{
+    padding: 6px;
+    border: none;
+}
+
+.btns button:hover{
+    background-color: #259361;
+    color: white;
+}
+
+.anchor{
+    text-decoration: none;
+    padding: 6px;
+    border: none;
+}
+.anchor:hover{
+    background-color: #259361;
+    color: white;
+}

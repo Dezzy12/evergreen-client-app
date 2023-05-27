@@ -1,1 +1,31 @@
-<p>book-preview works!</p>
+<div class="container preview" *ngIf="book">
+
+    <div class="row mt-2">
+        <div class="col-3">
+            <div class="book">
+                <div class="book-image">
+                    <img [src]="'http://127.0.0.1:8000' + book.image" alt="" height="300" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-7">
+            <div class="description">
+                <div class="title h3"> {{book.title}}</div>
+                <div class="title4 h5" >{{book.author}}</div>
+                <div class="title fs-6 text-left"> {{book.description}}
+                </div>
+
+                    <div class="btns d-flex pt-2">
+                        <button class="btn-green rounded py-2 px-4 button mt-5 fw-bold me-5" (click)="downloadPdf('http://127.0.0.1:8000'+book.pdf_reference, book.title)">Download Book</button>
+
+                        <a class="btn-green anchor rounded py-2 px-4 button mt-5 fw-bold ms-4 " [routerLink]="['../../reading']" [state]="{book_id: book.book_id}">Read Now</a>
+                    </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
