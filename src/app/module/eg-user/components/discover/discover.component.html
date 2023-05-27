@@ -11,20 +11,20 @@
         <hr style="width: 100%;">
     </div>
     <div class="books-container">
-        <div class="search" *ngIf="results">
+        <div class="search">
 
         </div>
         <div class="title">Trending</div>
         <div class="books">
-            <a [routerLink]="[1]">
+            <a *ngFor="let book of books" [routerLink]="[book.book_id]" class="anchors">
                 <div class="book">
                     <div class="book-image">
-                        <img src="../../../../../assets/images/download 2.png" alt="" height="180" width="120">
+                        <img [src]="'http://127.0.0.1:8000' + book.image"  alt="" height="180" width="120">
     
                     </div>
                     <div class="book-info">
-                        <div class="book-title">Pain</div>
-                        <div class="book-author">D3zzy</div>
+                        <div class="book-title">{{book.title}}</div>
+                        <div class="book-author">{{book.author}}</div>
                     </div>
                 </div>
             </a>

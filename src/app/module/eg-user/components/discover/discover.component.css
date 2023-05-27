@@ -9,7 +9,7 @@
     position: relative;
     width: 100%;
     height: 30%;
-    background: url("../../../../../assets/images/bookcover2.jpg");
+    background: url("../../../../../assets/images/imagebanner.png");
 }
 
 .overlay{
@@ -18,7 +18,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1;
 
 }
@@ -61,8 +61,31 @@
     text-transform: capitalize;
 }
 .book-author{
-    font-weight: bold;
+    font-weight: 500;
     font-size: 12px;
     line-height: 1;
     text-transform: capitalize;
+    margin-top: 3px;
+}
+
+.anchors {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.text{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.upper{
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.lower{
+    font-weight: 600;
+}
+.price{
+    color: red;
+    text-decoration: line-through;
 }
