@@ -1,1 +1,16 @@
-<p>reading works!</p>
+<pdf-viewer
+  [src]="'http://127.0.0.1:8000' + book.pdf_reference"
+  [original-size]="true"
+  [render-text]="true"
+  [rotation]="0"
+  [show-all]="true"
+  [fit-to-page]="false"
+  [zoom]="1"
+  [zoom-scale]="'page-width'"
+  [stick-to-page]="true"
+  [external-link-target]="'blank'"
+  [autoresize]="true"
+  [show-borders]="false"
+  class="pdf-viewer"
+></pdf-viewer>
+
